@@ -59,9 +59,9 @@ function forms(formSelector, timerModal) {
         document.querySelector('.modal').append(thanksModal)
         setTimeout(() => {
             thanksModal.remove()
-            prevModalDialog.classList.add('show')
-            prevModalDialog.classList.add('hide')
+            prevModalDialog.classList.remove('hide')
             toggleModal(`remove`, `.modal`, timerModal)
+            
         }, 4000)
     }
 }
